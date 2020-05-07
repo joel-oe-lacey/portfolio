@@ -16,12 +16,12 @@ export default {
 
 <style>
 #nav {
-    float: right;
+    align-self: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 20%;
+    height: 10%;
     width: 60%;
     border: 1px solid black;
 }
