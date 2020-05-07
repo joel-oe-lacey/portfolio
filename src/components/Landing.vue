@@ -20,9 +20,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 80%;
-    border: 1px solid black;
+    height: 40%;
+    width: 100%;
 }
 .inner-landing {
     display: flex;
@@ -30,8 +29,8 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 5%;
-    height: 75%;
-    width: 75%;
+    height: 90%;
+    width: 80%;
     border: 1px solid black;
 }
 </style>
