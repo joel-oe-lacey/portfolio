@@ -36,8 +36,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   flex: 0 0 auto;
-  height: 100%;
+  height: 300vh;
   width: 100%;
+  overflow-y: scroll;
 }
 #scroll-wrapper {
   /* position: absolute; */
@@ -45,8 +46,7 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow: auto;
 }
 </style>
