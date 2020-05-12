@@ -5,10 +5,9 @@
       <Landing />
       <InfoBlock v-bind="about"/>
       <InfoBlock v-bind="skills"/>
-      <InfoBlock />
+      <ExperienceBlock v-bind="resume"/>
+      <ExperienceBlock v-bind="education"/>
     </div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -17,20 +16,23 @@
 import Landing from './components/Landing.vue';
 import Nav from './components/Nav.vue';
 import InfoBlock from './components/InfoBlock.vue';
-import { about } from './assets/content.js';
-import { skills } from './assets/content.js';
+import ExperienceBlock from './components/ExperienceBlock.vue';
+import { about, skills, resume, education } from './assets/content.js';
 
 export default {
   name: 'App',
   components: {
     Landing,
     Nav,
-    InfoBlock
+    InfoBlock,
+    ExperienceBlock
   },
   data: function() {
         return {
           about,
-          skills
+          skills,
+          resume,
+          education
         }
     }
 }
