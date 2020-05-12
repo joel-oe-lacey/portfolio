@@ -3,8 +3,8 @@
     <div id="scroll-wrapper">
       <Nav />
       <Landing />
-      <InfoBlock />
-      <InfoBlock />
+      <InfoBlock v-bind="about"/>
+      <InfoBlock v-bind="skills"/>
       <InfoBlock />
     </div>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
@@ -17,6 +17,8 @@
 import Landing from './components/Landing.vue';
 import Nav from './components/Nav.vue';
 import InfoBlock from './components/InfoBlock.vue';
+import { about } from './assets/content.js';
+import { skills } from './assets/content.js';
 
 export default {
   name: 'App',
@@ -24,7 +26,13 @@ export default {
     Landing,
     Nav,
     InfoBlock
-  }
+  },
+  data: function() {
+        return {
+          about,
+          skills
+        }
+    }
 }
 </script>
 
