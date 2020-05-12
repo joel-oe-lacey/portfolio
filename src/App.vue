@@ -5,8 +5,14 @@
       <Landing />
       <InfoBlock v-bind="about"/>
       <InfoBlock v-bind="skills"/>
-      <ExperienceBlock v-bind="resume"/>
-      <ExperienceBlock v-bind="education"/>
+      <ExperienceBlock 
+        v-for="item in resume.items"
+        v-bind:key="item.title"
+        v-bind="item"/>
+      <ExperienceBlock 
+        v-for="item in education.items"
+        v-bind:key="item.title"
+        v-bind="item"/>
     </div>
   </div>
 </template>
