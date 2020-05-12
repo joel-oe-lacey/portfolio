@@ -15,3 +15,30 @@ export const skills = {
     'HTML / CSS',
     'SCSS']
 }
+
+export const resume = {
+    title: 'Experience',
+    items: [
+        {
+            company: 'Factset Research Systems',
+            sdate: 'Aug. 2015',
+            edate: 'Aug. 2019',
+            location: 'New York, NY',
+            title: 'Content Manager',
+            points: [
+                'Hired, trained and managed a team to improve support and turnover of content integration requests.',
+                'Overhauled systemically struggling content sets reducing QA request tickets by 90 %.',
+                'Devised technical specifications and fetch formulas for database creation, maintenance and client utilization.',
+                'Managed a collection of products: Setting and maintaining priorities and timelines, assisting in contract management and compliance, and overseeing stability and QA testing.'
+            ]
+        },
+        {
+            company: '',
+            sdate: '',
+            edate: '',
+            location: '',
+            title: '',
+            points: []
+        },
+    ]
+}
