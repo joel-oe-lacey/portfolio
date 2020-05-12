@@ -42,3 +42,30 @@ export const resume = {
         },
     ]
 }
+
+export const education = {
+    title: 'Education',
+    items: [
+        {
+            company: 'Turing School of Software & Design',
+            sdate: 'Sept. 2019',
+            edate: 'Apr. 2020',
+            location: 'Denver, CO',
+            title: 'Certificate in Front-End Engineering',
+            points: ['Fundamental Web Technologies', 'Web Development with JavaScript', 'Professional Client-Side Development', 'Desktop and Mobile Applications with Web Technologies']
+        },
+        {
+            company: 'The University of Connecticut',
+            sdate: 'Sept. 2011',
+            edate: 'May 2015',
+            location: 'Storrs, CT',
+            title: 'Bachelors of Science in Business: Management of Information System',
+            points: [
+                'Networking',
+                'SQL',
+                'Database Management',
+                'IT Security'
+            ]
+        },
+    ]
+}
