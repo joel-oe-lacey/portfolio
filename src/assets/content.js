@@ -32,14 +32,6 @@ export const resume = {
                 'Managed a collection of products: Setting and maintaining priorities and timelines, assisting in contract management and compliance, and overseeing stability and QA testing.'
             ]
         },
-        {
-            company: '',
-            sdate: '',
-            edate: '',
-            location: '',
-            title: '',
-            points: []
-        },
     ]
 }
 

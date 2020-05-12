@@ -10,7 +10,7 @@
           <h2>{{`${sdate} - ${edate}`}}</h2>
       </section>
       <section class="body"
-      v-for="point in points" :key="point">{{point}}>
+      v-for="point in points" :key="point">{{point}}
       </section>
   </section>
 </template>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-.info {
+.resumeItem {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
