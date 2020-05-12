@@ -1,7 +1,8 @@
 <template>
   <section id="landing">
       <section class="inner-landing">
-          <h1>Joel Lacey</h1>
+          <h1>“First we build the tools, then they build us.”
+― Marshall McLuhan</h1>
       </section>
   </section>
 </template>

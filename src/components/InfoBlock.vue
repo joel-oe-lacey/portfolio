@@ -1,11 +1,15 @@
+
 <template>
   <section class="info">
-      <h2>Test Header</h2>
-      <ul>
-          <li>React</li>
-          <li>Vue</li>
-          <li>Redux</li>
-      </ul>
+      <h2>{{title}}</h2>
+      <div v-if="desc">
+          <h2>{{desc}}</h2>
+      </div>
+      <div v-else>
+        <ul>
+          <li v-for="item in items" :key="item">{{item}}</li>
+        </ul>
+      </div>
   </section>
 </template>
 
@@ -13,7 +17,8 @@
 export default {
   name: 'InfoBlock',
   components: {
-  }
+  },
+  props: ['title', 'desc', 'items']
 }
 </script>
 
@@ -22,7 +27,8 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    padding: 5%;
     height: 40%;
     width: 80%;
     border: 1px solid black;

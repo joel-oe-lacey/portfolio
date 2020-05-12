@@ -3,12 +3,17 @@
     <div id="scroll-wrapper">
       <Nav />
       <Landing />
-      <InfoBlock />
-      <InfoBlock />
-      <InfoBlock />
+      <InfoBlock v-bind="about"/>
+      <InfoBlock v-bind="skills"/>
+      <ExperienceBlock 
+        v-for="item in resume.items"
+        v-bind:key="item.title"
+        v-bind="item"/>
+      <ExperienceBlock 
+        v-for="item in education.items"
+        v-bind:key="item.title"
+        v-bind="item"/>
     </div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
@@ -17,14 +22,25 @@
 import Landing from './components/Landing.vue';
 import Nav from './components/Nav.vue';
 import InfoBlock from './components/InfoBlock.vue';
+import ExperienceBlock from './components/ExperienceBlock.vue';
+import { about, skills, resume, education } from './assets/content.js';
 
 export default {
   name: 'App',
   components: {
     Landing,
     Nav,
-    InfoBlock
-  }
+    InfoBlock,
+    ExperienceBlock
+  },
+  data: function() {
+        return {
+          about,
+          skills,
+          resume,
+          education
+        }
+    }
 }
 </script>
 
@@ -36,8 +52,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   flex: 0 0 auto;
-  height: 100%;
+  height: 300vh;
   width: 100%;
+  overflow-y: scroll;
 }
 #scroll-wrapper {
   /* position: absolute; */
@@ -45,8 +62,7 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow: auto;
 }
 </style>
