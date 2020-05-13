@@ -9,9 +9,11 @@
           <h2>{{location}}</h2>
           <h2>{{`${sdate} - ${edate}`}}</h2>
       </section>
-      <section class="body"
-      v-for="point in points" :key="point">{{point}}
-      </section>
+      <ul class="body">
+          <li
+          v-for="point in points" :key="point">{{point}}
+          </li>
+      </ul>
   </section>
 </template>
 
@@ -25,12 +27,25 @@ export default {
 </script>
 
 <style>
+.leftHeader {
+  height: 40%;
+  width: 70%;
+}
+.rightHeader {
+  height: 40%;
+  width: 30%;
+}
+.body {
+  height: 60%;
+  width: 100%;
+  margin-top: 2%;  
+}
 .resumeItem {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 5%;
+    padding: 3%;
     height: 40%;
     width: 80%;
     border: 1px solid black;
