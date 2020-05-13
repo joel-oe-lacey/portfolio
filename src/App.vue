@@ -5,10 +5,12 @@
       <Landing />
       <InfoBlock v-bind="about"/>
       <InfoBlock v-bind="skills"/>
+      <h1>Experience</h1>
       <ExperienceBlock 
         v-for="item in resume.items"
         v-bind:key="item.title"
         v-bind="item"/>
+      <h1>Education</h1>
       <ExperienceBlock 
         v-for="item in education.items"
         v-bind:key="item.title"
@@ -50,7 +52,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   flex: 0 0 auto;
   height: 300vh;
   width: 100%;
@@ -64,5 +65,6 @@ export default {
   align-items: center;
   height: 100%;
   width: 100%;
+  text-align: left;
 }
 </style>
