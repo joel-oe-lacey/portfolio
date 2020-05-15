@@ -1,8 +1,8 @@
 <template>
   <section id="nav">
-      <a href="">About</a>
-      <a href="">Porfolio</a>
-      <a href="">Misc</a>
+      <router-link to="/"><a>About</a></router-link>
+      <router-link to="/portfolio">Porfolio</router-link>
+      <router-link to="/misc">Misc</router-link>
   </section>
 </template>
 
@@ -21,7 +21,7 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 10%;
+    height: 5%;
     width: 60%;
     border: 1px solid black;
 }
