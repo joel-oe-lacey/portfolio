@@ -43,7 +43,7 @@ export default {
 .resumeItem {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 3%;
     height: 40%;
