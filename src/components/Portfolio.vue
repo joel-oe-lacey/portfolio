@@ -1,26 +1,19 @@
 <template>
-  <div id="app">
-    <div id="scroll-wrapper">
-      <Nav />
-      <router-view></router-view>
+    <div id="inner-wrapper">
+      <h1>Portfolio</h1>
     </div>
-  </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue';
-
 export default {
-  name: 'App',
+  name: 'Portfolio',
   components: {
-    Nav
-  }
+  },
 }
 </script>
 
 <style>
 #app {
-  /* position: relative; */
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,13 +22,12 @@ export default {
   width: 100%;
   overflow-y: scroll;
 }
-#scroll-wrapper {
-  /* position: absolute; */
+#inner-wrapper {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 90%;
   width: 100%;
   text-align: left;
 }
