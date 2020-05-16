@@ -2,19 +2,17 @@
   <div id="app">
     <div id="scroll-wrapper">
       <Nav />
-      <About />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
-import About from './components/About.vue';
 import Nav from './components/Nav.vue';
 
 export default {
   name: 'App',
   components: {
-    About,
     Nav
   }
 }
