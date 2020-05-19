@@ -5,11 +5,11 @@
       <h1 class="projHeader">Project Name</h1>
       <section class="about">
           <h2>About</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </section>
       <section class="stack">
           <h2>Stack</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </section>
       <!-- <img class="projectImg" src="../assets/logo.png"/> -->
     </section>
@@ -30,7 +30,8 @@ export default {
   flex-flow: column wrap;
   height: 90%;
   width: 90%;
-  /* padding: 3%; */
+  padding: 3%;
+  border-radius: 1%;
   border: 1px solid black;
 }
 .portfolioItem {
@@ -42,6 +43,8 @@ export default {
   width: 90%;
   border: 1px solid black;
   margin: 3%;
+  border-radius: 1%;
+  box-shadow: 2px 5px;
 }
 .projHeader {
   height: 10%;
