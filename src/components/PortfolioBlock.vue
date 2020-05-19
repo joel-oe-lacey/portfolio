@@ -1,6 +1,6 @@
 
 <template>
-  <section class="resumeItem">
+  <section class="portfolioItem">
       <ul class="body">
       </ul>
   </section>
@@ -21,7 +21,7 @@ export default {
   width: 90%;
   border: 1px solid black;
 }
-.resumeItem {
+.portfolioItem {
     display: flex;
     justify-content: center;
     height: 40%;
