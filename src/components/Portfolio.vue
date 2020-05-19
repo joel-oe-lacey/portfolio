@@ -1,13 +1,18 @@
 <template>
-    <div id="inner-wrapper">
-      <h1>Portfolio</h1>
+    <div id="port-wrapper">
+      <PortfolioBlock />
+      <PortfolioBlock />
+      <PortfolioBlock />
     </div>
 </template>
 
 <script>
+import PortfolioBlock from './PortfolioBlock.vue';
+
 export default {
   name: 'Portfolio',
   components: {
+    PortfolioBlock
   },
 }
 </script>
@@ -22,13 +27,12 @@ export default {
   width: 100%;
   overflow-y: scroll;
 }
-#inner-wrapper {
+#port-wrapper {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
   height: 90%;
   width: 100%;
-  text-align: left;
 }
 </style>
