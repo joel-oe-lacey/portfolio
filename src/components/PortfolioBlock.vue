@@ -1,53 +1,66 @@
 
 <template>
-  <section class="resumeItem">
-      <section class="leftHeader">
-          <h2>{{company}}</h2>
-          <h2>{{title}}</h2>
+  <section class="portfolioItem">
+    <section class="portfolioBody">
+      <h1 class="projHeader">Project Name</h1>
+      <section class="about">
+          <h2>About</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </section>
-      <section class="rightHeader">
-          <h2>{{location}}</h2>
-          <h2>{{`${sdate} - ${edate}`}}</h2>
+      <section class="stack">
+          <h2>Stack</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
       </section>
-      <ul class="body">
-          <li
-          v-for="point in points" :key="point">{{point}}
-          </li>
-      </ul>
+      <!-- <img class="projectImg" src="../assets/logo.png"/> -->
+    </section>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'InfoBlock',
+  name: 'PortfolioBlock',
   components: {
   },
-  props: ['company', 'sdate', 'edate', 'location', 'title', 'points']
 }
 </script>
 
 <style>
-.leftHeader {
-  height: 40%;
-  width: 70%;
+.portfolioBody {
+  display: flex;
+  flex-flow: column wrap;
+  height: 90%;
+  width: 90%;
+  padding: 3%;
+  border-radius: 1%;
+  border: 1px solid black;
 }
-.rightHeader {
+.portfolioItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 40%;
-  width: 30%;
+  width: 90%;
+  border: 1px solid black;
+  margin: 3%;
+  border-radius: 1%;
+  box-shadow: 2px 5px;
 }
-.body {
-  height: 60%;
+.projHeader {
+  height: 10%;
   width: 100%;
-  margin-top: 2%;  
 }
-.resumeItem {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3%;
-    height: 40%;
-    width: 80%;
-    border: 1px solid black;
+.about {
+  height: 45%;
+  width: 50%;
+}
+.stack {
+  height: 45%;
+  width: 50%;
+}
+.projectImg {
+  height: 90%;
+  width: 50%;
+  object-fit: scale-down;
 }
 </style>
