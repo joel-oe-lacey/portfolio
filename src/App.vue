@@ -28,6 +28,7 @@ export default {
   height: 300vh;
   width: 100%;
   overflow-y: scroll;
+  background-color: #555B6E;
 }
 #scroll-wrapper {
   /* position: absolute; */
