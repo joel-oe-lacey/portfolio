@@ -3,12 +3,12 @@
       <Landing />
       <InfoBlock v-bind="about"/>
       <InfoBlock v-bind="skills"/>
-      <h1>Experience</h1>
+      <h1 class="header">Experience</h1>
       <ExperienceBlock 
         v-for="item in resume.items"
         v-bind:key="item.title"
         v-bind="item"/>
-      <h1>Education</h1>
+      <h1 class="header">Education</h1>
       <ExperienceBlock 
         v-for="item in education.items"
         v-bind:key="item.title"
@@ -49,6 +49,7 @@ export default {
   height: 300vh;
   width: 100%;
   overflow-y: scroll;
+  color: #E8EBE4;
 }
 #inner-wrapper {
   display: flex;
@@ -58,5 +59,11 @@ export default {
   height: 90%;
   width: 100%;
   text-align: left;
+}
+.header {
+  height: 10%;
+  width: 80%;
+  text-align: left;
+  background: linear-gradient(45deg,#82455D, #555B6E)
 }
 </style>
