@@ -48,6 +48,6 @@ export default {
     padding: 3%;
     height: 40%;
     width: 80%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 </style>

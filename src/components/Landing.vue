@@ -32,6 +32,6 @@ export default {
     margin: 5%;
     height: 90%;
     width: 80%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 </style>
