@@ -2,15 +2,16 @@
 <template>
   <section class="portfolioItem">
     <section class="portfolioBody">
-      <h1 class="projHeader">Project Name</h1>
+      <h1 class="projHeader">{{title}}</h1>
       <section class="about">
           <h2>About</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <p>{{desc}}</p>
       </section>
-      <section class="stack">
-          <h2>Stack</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </section>
+      <ul class="stack">
+          <li
+          v-for="item in stack" :key="item">{{item}}
+          </li>
+      </ul>
       <!-- <img class="projectImg" src="../assets/logo.png"/> -->
     </section>
   </section>
@@ -21,6 +22,7 @@ export default {
   name: 'PortfolioBlock',
   components: {
   },
+  props: ['title', 'link', 'desc', 'stack']
 }
 </script>
 
