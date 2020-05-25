@@ -64,6 +64,8 @@ export default {
   height: 10%;
   width: 80%;
   text-align: left;
+  padding: 1%;
+  color: #C4D3E7;
   background: linear-gradient(45deg,#82455D, #555B6E)
 }
 </style>
