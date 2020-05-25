@@ -61,3 +61,24 @@ export const education = {
         },
     ]
 }
+
+export const projects = [
+        {
+            title: 'The American Portrait',
+            link: 'https://github.com/joel-oe-lacey/The-American-Portrait',
+            desc: 'A solo project built in five days which normalizes and massages data from the Harvard Art Museum API to feed a React-based timeline visualization tool for historical photos by US state, utilizing Redux for global state control.',
+            stack: ['React', 'React Router', 'Redux', 'SCSS', 'Jest', 'Enzyme']
+        },
+        {
+            title: 'Treat Yo Self',
+            link: 'https://github.com/TreatYoSelf/react_fe',
+            desc: 'A group project that overcame major disruptions build a self-care Android app with React Native, where users can authenticate with Google & set up auto-scheduling self-care tasks based on their preferences.',
+            stack: ['React Native', 'Apollo/GraphQL', 'Expo', 'Google OAuth']
+        },
+        {
+            title: 'Grandiose Sarajevo Motel',
+            link: 'https://github.com/joel-oe-lacey/Grandiose-Sarajevo-Motel',
+            desc: 'A hotel reservation manager built solo utilizing vanilla JS and jQuery.  Users, and managers can handle their reservations, view their total spending or operational statistics, and search for and book available rooms.',
+            stack: ['Javascript', 'jQuery', 'SCSS', 'Mocha', 'Chai']
+        },
+    ]
