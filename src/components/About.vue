@@ -3,10 +3,10 @@
       <div class="parallax-container">
         <parallax>
           <img src="../assets/nyc.jpg" class="background">
-          <Landing />
         </parallax>
       </div>
       <div id="inner-wrapper">
+        <Landing />
         <InfoBlock v-bind="about"/>
         <InfoBlock v-bind="skills"/>
         <h1 class="header">Experience</h1>
@@ -65,10 +65,13 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  margin-top: 20%;
+  height: 80%;
+  width: 80%;
   text-align: left;
   z-index: 1;
+  align-self: center;
+  background-color: rgba(201, 76, 76, 0.3);
 }
 .header {
   height: 10%;
@@ -84,12 +87,16 @@ export default {
 }
 .parallax-container {
   position: absolute;
-  height: 30%;
+  height: 75%;
   width: 100%;
 }
 .about-cont {
   height: 100%;
   width: 100%; 
   z-index: 0;
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 </style>
