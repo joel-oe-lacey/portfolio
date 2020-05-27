@@ -1,5 +1,8 @@
 <template>
     <div id="inner-wrapper">
+      <parallax class="backdrop">
+        <img src="../assets/nyc.jpg">
+      </parallax>
       <Landing />
       <InfoBlock v-bind="about"/>
       <InfoBlock v-bind="skills"/>
@@ -21,13 +24,15 @@ import Landing from './Landing.vue';
 import InfoBlock from './InfoBlock.vue';
 import ExperienceBlock from './ExperienceBlock.vue';
 import { about, skills, resume, education } from '../assets/content.js';
+import Parallax from "vue-parallaxy";
 
 export default {
   name: 'App',
   components: {
     Landing,
     InfoBlock,
-    ExperienceBlock
+    ExperienceBlock,
+    Parallax
   },
   data: function() {
         return {
