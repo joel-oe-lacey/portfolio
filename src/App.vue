@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <div id="scroll-wrapper">
-      <Nav />
-      <router-view></router-view>
-    </div>
+    <Nav />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -24,20 +22,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  flex: 0 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: left;
   height: 300vh;
   width: 100%;
   overflow-y: scroll;
   background-color: #555B6E;
-}
-#scroll-wrapper {
-  /* position: absolute; */
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  text-align: left;
+  z-index: -1;
 }
 </style>
