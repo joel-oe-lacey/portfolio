@@ -1,21 +1,25 @@
 <template>
-    <div id="inner-wrapper">
-      <parallax class="backdrop">
-        <img src="../assets/nyc.jpg">
-      </parallax>
-      <Landing />
-      <InfoBlock v-bind="about"/>
-      <InfoBlock v-bind="skills"/>
-      <h1 class="header">Experience</h1>
-      <ExperienceBlock 
-        v-for="item in resume.items"
-        v-bind:key="item.title"
-        v-bind="item"/>
-      <h1 class="header">Education</h1>
-      <ExperienceBlock 
-        v-for="item in education.items"
-        v-bind:key="item.title"
-        v-bind="item"/>
+    <div class="about-cont">
+      <div class="parallax-container">
+        <parallax>
+          <img src="../assets/nyc.jpg" class="background">
+          <Landing />
+        </parallax>
+      </div>
+      <div id="inner-wrapper">
+        <InfoBlock v-bind="about"/>
+        <InfoBlock v-bind="skills"/>
+        <h1 class="header">Experience</h1>
+        <ExperienceBlock 
+          v-for="item in resume.items"
+          v-bind:key="item.title"
+          v-bind="item"/>
+        <h1 class="header">Education</h1>
+        <ExperienceBlock 
+          v-for="item in education.items"
+          v-bind:key="item.title"
+          v-bind="item"/>
+      </div>
     </div>
 </template>
 
@@ -61,9 +65,10 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  height: 90%;
+  height: 100%;
   width: 100%;
   text-align: left;
+  z-index: 1;
 }
 .header {
   height: 10%;
@@ -71,6 +76,20 @@ export default {
   text-align: left;
   padding: 1%;
   color: #C4D3E7;
-  background: linear-gradient(45deg,#82455D, #555B6E)
+  /* background: linear-gradient(45deg,#82455D, #555B6E); */
+}
+.background {
+  height: 100%;
+  width: 100%;
+}
+.parallax-container {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+}
+.about-cont {
+  height: 100%;
+  width: 100%; 
+  z-index: 0;
 }
 </style>
