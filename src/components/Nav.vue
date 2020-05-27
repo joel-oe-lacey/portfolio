@@ -21,9 +21,11 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 5%;
+    position: fixed;
+    height: 100px;
     width: 60%;
     font-size: 2em;
+    z-index: 9999;
 }
 .link {
     text-decoration: none;
