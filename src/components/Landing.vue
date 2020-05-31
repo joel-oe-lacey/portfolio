@@ -31,7 +31,7 @@ export default {
     align-items: center;
     margin: 5%;
     height: 90%;
-    width: 80%;
+    width: 100%;
     /* border: 1px solid black; */
 }
 </style>

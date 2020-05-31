@@ -65,17 +65,17 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
   height: 80%;
   width: 80%;
   text-align: left;
   z-index: 1;
   align-self: center;
-  background-color: rgba(201, 76, 76, 0.3);
+  /* background-color: rgba(149, 144, 168, 0.6); */
 }
 .header {
   height: 10%;
-  width: 80%;
+  width: 100%;
   text-align: left;
   padding: 1%;
   color: #C4D3E7;
@@ -84,6 +84,7 @@ export default {
 .background {
   height: 100%;
   width: 100%;
+  background-color: rgba(149, 144, 168, 0.6);
 }
 .parallax-container {
   position: absolute;

@@ -47,7 +47,6 @@ export default {
     align-items: flex-start;
     padding: 3%;
     height: 40%;
-    width: 80%;
-    /* border: 1px solid black; */
+    width: 100%;
 }
 </style>
