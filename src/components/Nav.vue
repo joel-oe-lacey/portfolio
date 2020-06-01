@@ -1,8 +1,8 @@
 <template>
   <section id="nav">
-      <router-link to="/"><a>About</a></router-link>
-      <router-link to="/portfolio">Porfolio</router-link>
-      <router-link to="/misc">Misc</router-link>
+      <router-link to="/" class="link">About</router-link>
+      <router-link to="/portfolio" class="link">Porfolio</router-link>
+      <router-link to="/misc" class="link">Misc</router-link>
   </section>
 </template>
 
@@ -16,13 +16,27 @@ export default {
 
 <style>
 #nav {
-    align-self: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 5%;
+    position: fixed;
+    margin-top: auto;
+    height: 100px;
     width: 60%;
-    border: 1px solid black;
+    font-size: 2em;
+    z-index: 9999;
+    align-self: flex-end;
+}
+.link {
+    text-decoration: none;
+    color: #E8EBE4;
+    padding: 1%;
+    border-radius: 15%;
+}
+.link:hover {
+  background-color: #82455D;
+  color: #C4D3E7;
+  transition: .5s;
 }
 </style>

@@ -1,19 +1,27 @@
 <template>
     <div id="port-wrapper">
-      <PortfolioBlock />
-      <PortfolioBlock />
-      <PortfolioBlock />
+      <PortfolioBlock 
+        v-for="item in projects"
+        v-bind:key="item.title"
+        v-bind="item"/>
     </div>
 </template>
 
 <script>
 import PortfolioBlock from './PortfolioBlock.vue';
+import { projects } from '../assets/content.js';
+
 
 export default {
   name: 'Portfolio',
   components: {
     PortfolioBlock
   },
+  data: function() {
+      return {
+        projects
+      }
+  }
 }
 </script>
 
@@ -30,8 +38,8 @@ export default {
 #port-wrapper {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
   align-items: center;
+  margin-top: 10%;
   height: 90%;
   width: 100%;
 }
