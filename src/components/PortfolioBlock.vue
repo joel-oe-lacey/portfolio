@@ -12,7 +12,7 @@
           v-for="item in stack" :key="item">{{item}}
           </li>
       </ul>
-      <!-- <img class="projectImg" src="../assets/logo.png"/> -->
+      <img class="projectImg" src="../assets/american_portrait.png"/>
     </section>
   </section>
 </template>
@@ -22,14 +22,20 @@ export default {
   name: 'PortfolioBlock',
   components: {
   },
-  props: ['title', 'link', 'desc', 'stack']
+  props: ['title', 'link', 'desc', 'stack', 'img']
 }
 </script>
 
 <style>
 .portfolioBody {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 45% 45%;
+  grid-gap: 2%;
+  grid-template-areas: 
+  "header header"
+  "about img"
+  "stack img";
   height: 90%;
   width: 90%;
   padding: 3%;
@@ -49,20 +55,19 @@ export default {
   box-shadow: 2px 5px;
 }
 .projHeader {
-  height: 10%;
-  width: 100%;
+  font-size: 1.8em;
+  grid-area: header;
 }
 .about {
-  height: 45%;
-  width: 50%;
+  grid-area: about;
 }
 .stack {
-  height: 45%;
-  width: 50%;
+  grid-area: stack;
 }
 .projectImg {
-  height: 90%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+  grid-area: img;
   object-fit: scale-down;
 }
 </style>
