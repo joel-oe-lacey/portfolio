@@ -26,10 +26,11 @@ export default {
   flex-flow: column;
   align-items: center;
   text-align: left;
-  height: 300vh;
+  height: 500vh;
   width: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   background-color: #555B6E;
+  color: #E8EBE4;
   z-index: -1;
 }
 </style>
