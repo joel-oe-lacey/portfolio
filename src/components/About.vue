@@ -5,8 +5,8 @@
           <img src="../assets/nyc.jpg" class="background">
         </parallax>
       </div>
+      <Landing />
       <div id="inner-wrapper">
-        <Landing />
         <InfoBlock v-bind="about"/>
         <InfoBlock v-bind="skills"/>
         <h1 class="header">Experience</h1>
@@ -50,23 +50,13 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  flex: 0 0 auto;
-  height: 300vh;
-  width: 100%;
-  overflow-y: scroll;
-  color: #E8EBE4;
-}
 #inner-wrapper {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 10%;
-  height: 80%;
+  min-height: 75%;
   width: 80%;
   text-align: left;
   z-index: 1;
@@ -87,8 +77,9 @@ export default {
   background-color: rgba(149, 144, 168, 0.6);
 }
 .parallax-container {
-  position: absolute;
-  height: 75%;
+  position: relative;
+  z-index: 1;
+  /* height: 75%; */
   width: 100%;
 }
 .about-cont {
@@ -99,5 +90,6 @@ export default {
   flex-flow: column;
   /* justify-content: center; */
   align-items: center;
+  overflow: hidden;
 }
 </style>
