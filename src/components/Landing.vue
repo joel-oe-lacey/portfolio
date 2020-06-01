@@ -1,7 +1,7 @@
 <template>
   <section class="landing">
       <section class="inner-landing">
-          <h1>“First we build the tools, then they build us.”
+          <h1 class="landing-text">“First we build the tools, then they build us.”
 ― Marshall McLuhan</h1>
       </section>
   </section>
@@ -35,5 +35,8 @@ export default {
     height: 40%;
     width: 60%;
     background-color: rgba(149, 144, 168, 0.6);
+}
+.landing-text {
+  font-size: 1.4rem;
 }
 </style>

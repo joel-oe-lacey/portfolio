@@ -38,8 +38,8 @@ export default {
 #port-wrapper {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
   align-items: center;
+  margin-top: 10%;
   height: 90%;
   width: 100%;
 }

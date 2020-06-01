@@ -55,8 +55,7 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10%;
-  min-height: 75%;
+  min-height: 50%;
   width: 80%;
   text-align: left;
   z-index: 1;

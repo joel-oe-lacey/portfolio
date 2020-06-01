@@ -16,16 +16,17 @@ export default {
 
 <style>
 #nav {
-    align-self: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    margin-top: auto;
     height: 100px;
     width: 60%;
     font-size: 2em;
     z-index: 9999;
+    align-self: flex-end;
 }
 .link {
     text-decoration: none;
