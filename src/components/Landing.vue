@@ -1,5 +1,5 @@
 <template>
-  <section id="landing">
+  <section class="landing">
       <section class="inner-landing">
           <h1>“First we build the tools, then they build us.”
 ― Marshall McLuhan</h1>
@@ -16,13 +16,15 @@ export default {
 </script>
 
 <style>
-#landing {
+.landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40%;
+    height: 80%;
     width: 100%;
+    z-index: 2;
+    position: absolute;
 }
 .inner-landing {
     display: flex;
@@ -30,8 +32,8 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 5%;
-    height: 90%;
-    width: 100%;
-    /* border: 1px solid black; */
+    height: 40%;
+    width: 60%;
+    background-color: rgba(149, 144, 168, 0.6);
 }
 </style>
