@@ -18,17 +18,15 @@ export default {
 
 <style>
 #app {
-  /* position: relative; */
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  text-align: left;
-  height: 500vh;
+  /* align-items: center; */
+  /* text-align: left; */
+  height: 350vh;
   width: 100%;
-  /* overflow-y: scroll; */
   background-color: #555B6E;
   color: #E8EBE4;
   z-index: -1;
