@@ -12,7 +12,7 @@
           v-for="item in stack" :key="item">{{item}}
           </li>
       </ul>
-      <img class="projectImg" src="../assets/american_portrait.png"/>
+      <img class="projectImg" src="../assets/american_portrait.png" />
     </section>
   </section>
 </template>
@@ -36,11 +36,14 @@ export default {
   "header header"
   "about img"
   "stack img";
-  height: 90%;
-  width: 90%;
+  height: 96%;
+  width: 98%;
   padding: 3%;
-  border-radius: 1%;
-  border: 1px solid black;
+  border-bottom-right-radius: 4% 9%;
+  border-top-right-radius: 4% 9%;
+  border-bottom-left-radius: 4% 9%;
+  border-top-left-radius: 4% 9%;
+  background-color: #9590A8;
 }
 .portfolioItem {
   display: flex;
@@ -49,14 +52,22 @@ export default {
   justify-content: center;
   height: 40%;
   width: 90%;
-  border: 1px solid black;
   margin: 3%;
-  border-radius: 1%;
-  box-shadow: 2px 5px;
+  /* border-radius: 1%; */
+  background-color: #C4D3E7;
+  border-bottom-right-radius: 5% 10%;
+  border-top-right-radius: 5% 10%;
+  border-bottom-left-radius: 5% 10%;
+  border-top-left-radius: 5% 10%;
+}
+.portfolioItem:hover {
+  box-shadow: 0.1rem 0.3rem 0.6rem #9590A8;
+  transition: 300ms;
 }
 .projHeader {
-  font-size: 1.8em;
+  font-size: 2em;
   grid-area: header;
+  color: #82455D;
 }
 .about {
   grid-area: about;

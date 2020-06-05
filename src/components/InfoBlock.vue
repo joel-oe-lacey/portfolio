@@ -31,5 +31,6 @@ export default {
     padding: 5%;
     height: 40%;
     width: 100%;
+    /* color: #82455D; */
 }
 </style>

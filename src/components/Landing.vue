@@ -35,6 +35,10 @@ export default {
     height: 40%;
     width: 60%;
     background-color: rgba(149, 144, 168, 0.6);
+    border-bottom-right-radius: 5% 10%;
+    border-top-right-radius: 5% 10%;
+    border-bottom-left-radius: 5% 10%;
+    border-top-left-radius: 5% 10%;
 }
 .landing-text {
   font-size: 1.4rem;
