@@ -7,8 +7,7 @@
       </div>
       <Landing />
       <div id="inner-wrapper">
-        <InfoBlock v-bind="about"/>
-        <InfoBlock v-bind="skills"/>
+        <InfoBlock />
         <h1 class="header">Experience</h1>
         <ExperienceBlock 
           v-for="item in resume.items"
