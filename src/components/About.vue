@@ -8,16 +8,16 @@
       <Landing />
       <div id="inner-wrapper">
         <InfoBlock />
-        <h1 class="header">Experience</h1>
-        <ExperienceBlock 
-          v-for="item in resume.items"
-          v-bind:key="item.title"
-          v-bind="item"/>
-        <h1 class="header">Education</h1>
-        <ExperienceBlock 
-          v-for="item in education.items"
-          v-bind:key="item.title"
-          v-bind="item"/>
+        <Carousel width="100%" height="40%">
+          <ExperienceBlock 
+            v-for="item in resume.items"
+            v-bind:key="item.title"
+            v-bind="item"/>
+          <ExperienceBlock 
+            v-for="item in education.items"
+            v-bind:key="item.title"
+            v-bind="item"/>
+        </Carousel>
       </div>
     </div>
 </template>
@@ -26,6 +26,7 @@
 import Landing from './Landing.vue';
 import InfoBlock from './InfoBlock.vue';
 import ExperienceBlock from './ExperienceBlock.vue';
+import Carousel from './Carousel.vue';
 import { about, skills, resume, education } from '../assets/content.js';
 import Parallax from "vue-parallaxy";
 
@@ -35,7 +36,8 @@ export default {
     Landing,
     InfoBlock,
     ExperienceBlock,
-    Parallax
+    Parallax,
+    Carousel
   },
   data: function() {
         return {
