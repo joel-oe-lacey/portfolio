@@ -1,8 +1,12 @@
 <template>
   <section class="landing">
       <section class="inner-landing">
-          <h1 class="landing-text">“First we build the tools, then they build us.”
-― Marshall McLuhan</h1>
+          <h1 class="landing-text">{{header}}</h1>
+          <section v-if="body" class='working-skills'>
+            <p
+            v-for="(item, index) in body" :key="index">{{item}}
+            </p>
+          </section>
       </section>
   </section>
 </template>
@@ -10,8 +14,7 @@
 <script>
 export default {
   name: 'Landing',
-  components: {
-  }
+  props: ['header', 'body']
 }
 </script>
 
@@ -42,5 +45,12 @@ export default {
 }
 .landing-text {
   font-size: 1.4rem;
+}
+.working-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 </style>
