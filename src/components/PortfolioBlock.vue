@@ -71,10 +71,6 @@ export default {
   border-top-left-radius: 5% 10%;
   transition: 800ms;
 }
-.portfolio-item:hover {
-  box-shadow: 0.1rem 0.3rem 0.6rem #9590A8;
-  transition: 300ms;
-}
 .proj-header {
   font-size: 2em;
   grid-area: header;
@@ -145,5 +141,9 @@ export default {
   border-top-right-radius: 5% 10%;
   border-bottom-left-radius: 5% 10%;
   border-top-left-radius: 5% 10%;
+}
+.btn:hover {
+  box-shadow: 0.1rem 0.2rem 0.3rem white;
+  transition: 300ms;
 }
 </style>

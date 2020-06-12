@@ -5,10 +5,11 @@
           <img src="../assets/nyc.jpg" class="background">
         </parallax>
       </div>
-      <Landing />
+      <Landing v-bind="aboutLanding"/>
       <div id="inner-wrapper">
         <InfoBlock />
-        <Carousel width="100%" height="40%">
+      <h2 class='port-header'>My Journey</h2>
+        <Carousel width="100%" height="50%">
           <ExperienceBlock 
             v-for="item in journey"
             v-bind:key="item.title"
@@ -23,7 +24,7 @@ import Landing from './Landing.vue';
 import InfoBlock from './InfoBlock.vue';
 import ExperienceBlock from './ExperienceBlock.vue';
 import Carousel from './Carousel.vue';
-import { about, skills, journey } from '../assets/content.js';
+import { about, journey, aboutLanding } from '../assets/content.js';
 import Parallax from "vue-parallaxy";
 
 export default {
@@ -38,8 +39,8 @@ export default {
   data: function() {
         return {
           about,
-          skills,
-          journey
+          journey,
+          aboutLanding
         }
     }
 }
@@ -51,8 +52,8 @@ export default {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 50%;
-  width: 80%;
+  height: 100%;
+  width: 90%;
   text-align: left;
   z-index: 1;
   align-self: center;

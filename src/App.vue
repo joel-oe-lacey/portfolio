@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <Nav />
     <router-view></router-view>
   </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-#app {
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,7 +25,7 @@ export default {
   flex-flow: column;
   /* align-items: center; */
   /* text-align: left; */
-  height: 350vh;
+  height: 250vh;
   width: 100%;
   background-color: #555B6E;
   color: #E8EBE4;

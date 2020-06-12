@@ -2,7 +2,7 @@
 <template>
   <section class="resumeItem">
       <h2 class='comp'>{{company}}</h2>
-      <h2 class='date'>{{`${sdate} - ${edate}`}}</h2>
+      <h2 class='date'>{{`${edate} - ${sdate}`}}</h2>
       <section class="details">
           <h2>{{title}}</h2>
           <h2>{{location}}</h2>
@@ -44,7 +44,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: rgb(126, 98, 109);
+  color: #CEA1B3;
 }
 .desc {
   height: 30%;
@@ -59,7 +59,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  color: rgb(126, 98, 109);
+  color: #CEA1B3;
 }
 .highlights {
   height: 30%;
@@ -73,7 +73,7 @@ export default {
 .resumeItem {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   width: 100%;

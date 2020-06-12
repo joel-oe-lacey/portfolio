@@ -1,8 +1,8 @@
 <template>
   <section id="nav">
-      <router-link to="/" class="link">About</router-link>
+      <router-link to="/" class="link">About Me</router-link>
       <router-link to="/portfolio" class="link">Porfolio</router-link>
-      <router-link to="/content" class="link">Content</router-link>
+      <!-- <router-link to="/content" class="link">Content</router-link> -->
   </section>
 </template>
 
