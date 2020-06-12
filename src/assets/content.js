@@ -1,17 +1,20 @@
-export const about = {
-    title: 'About Me',
-    desc: 'A front-end developer utilizing strong interpersonal team skills, an inquisitive approach to research, and a love for deconstruction to create humane and sustainable technological solutions.'
+export const aboutLanding = {
+    header: '“First we build the tools, then they build us.” ― Marshall McLuhan',
+    body: ''
 }
 
-export const skills = ['React',
-    'React Native',
-    'Vue',
-    'TypeScript',
-    'Node.JS',
-    'JavaScript',
-    'jQuery',
-    'HTML / CSS',
-    'SCSS']
+export const portLanding = {
+    header: 'I\'m Working In',
+    body: ['React',
+        'React Native',
+        'Vue',
+        'TypeScript',
+        'Node.JS',
+        'JavaScript',
+        'jQuery',
+        'HTML / CSS',
+        'SCSS']
+}
 
 export const journey = [{
     company: 'Turing School of Software & Design',
