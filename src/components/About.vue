@@ -10,11 +10,7 @@
         <InfoBlock />
         <Carousel width="100%" height="40%">
           <ExperienceBlock 
-            v-for="item in resume.items"
-            v-bind:key="item.title"
-            v-bind="item"/>
-          <ExperienceBlock 
-            v-for="item in education.items"
+            v-for="item in journey"
             v-bind:key="item.title"
             v-bind="item"/>
         </Carousel>
@@ -27,7 +23,7 @@ import Landing from './Landing.vue';
 import InfoBlock from './InfoBlock.vue';
 import ExperienceBlock from './ExperienceBlock.vue';
 import Carousel from './Carousel.vue';
-import { about, skills, resume, education } from '../assets/content.js';
+import { about, skills, journey } from '../assets/content.js';
 import Parallax from "vue-parallaxy";
 
 export default {
@@ -43,8 +39,7 @@ export default {
         return {
           about,
           skills,
-          resume,
-          education
+          journey
         }
     }
 }
