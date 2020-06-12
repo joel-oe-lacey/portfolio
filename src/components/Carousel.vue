@@ -1,5 +1,5 @@
 <template>
-  <section class="carousel-outer">
+  <section class="carousel-outer" :style="{ width, height }">
     <section class="carousel">
       <slot/>
     </section>
@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  props: ["width", "height"],
   methods: {
     changeSlide(delta) {
       const carousel = this.$el.querySelector(".carousel");
@@ -22,10 +23,6 @@ export default {
 
 
 <style scoped>
-.carousel-outer {
-  height: 40%;
-  width: 100%;
-}
 .carousel {
   display: flex;
   overflow: scroll;
