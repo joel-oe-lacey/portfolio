@@ -1,21 +1,24 @@
 <template>
-    <div id="port-wrapper">
-      <PortfolioBlock 
-        v-for="item in projects"
-        v-bind:key="item.title"
+    <div class="port-wrapper">
+      <Carousel width="100%" height="50%">
+        <PortfolioBlock 
+        v-for="(item, index) in projects"
+        v-bind:key="index"
         v-bind="item"/>
+      </Carousel>
     </div>
 </template>
 
 <script>
 import PortfolioBlock from './PortfolioBlock.vue';
 import { projects } from '../assets/content.js';
-
+import Carousel from './Carousel.vue';
 
 export default {
   name: 'Portfolio',
   components: {
-    PortfolioBlock
+    PortfolioBlock,
+    Carousel
   },
   data: function() {
       return {
@@ -26,21 +29,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  flex: 0 0 auto;
-  height: 300vh;
+.app {
+  height: 100vh;
   width: 100%;
-  overflow-y: scroll;
 }
-#port-wrapper {
+.port-wrapper {
   display: flex;
   flex-flow: column;
   align-items: center;
   margin-top: 10%;
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 </style>
