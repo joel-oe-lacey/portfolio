@@ -16,6 +16,13 @@ export const portLanding = {
         'SCSS']
 }
 
+export const personalDesc = {
+    header: 'Joel Oliver Edward Lacey',
+    body: [
+        'I think we’re intrinsically linked with technology. At this point it spans every corner of our lives. We’ve reached an important cross-roads where we have to stop and ask ourselves; is our technology really helping us live better lives in the way we want it to?', 'I’m a Front End Developer who recently made an intensive shift from Content Management to be at the bleeding edge of contending with that very question. In what ways is our technology getting away from us? How can we design programs and websites that represent our best interests: in diversity, in our mental well being, in digital community?', 'I’ve been learning, coding, writing and collaborating with wonderful people and organizations in the community in that pursuit ever since. Read a little about that journey below.'
+    ]
+}
+
 export const journey = [{
     company: 'Turing School of Software & Design',
     sdate: 'September 2019',
@@ -64,7 +71,7 @@ export const projects = [
             live: 'https://the-american-portrait.herokuapp.com/',
             desc: ['I believe there’s real power in remembering our collective history. Originally born in England, I immigrated with my family when I was young and only recently proudly participated in my citizenship ceremony having lived here my whole life.', 'I wanted to find a way to visual connect with the American past. I built this solo project in five days, it normalizes and massages data from the Harvard Art Museum API to feed a React-based timeline visualization tool for historical photos by US state, utilizing Redux for global state control.', 'It wasn’t without struggle, the Harvard API has provides a deeply variable nested object return dependent on the type of art being accessed. It also has large gaps in available meta-data for the pieces, creating limited options by which to create causal, meaningful groupings.', 'Ultimately however, it came together to create a fun, interactive platform by which people can explore the history of their state.'],
             stack: ['React (Class-Based)', 'React Router', 'Redux', 'SCSS', 'Jest', 'Enzyme'],
-            img: '../assets/american_portrait.png'
+            img: 'https://d2fbv9aul2xr54.cloudfront.net/american_portrait.png'
         },
         {
             title: 'Treat Yo Self',
@@ -72,7 +79,7 @@ export const projects = [
             live: '',
             desc: ['As we reached our final project of the bootcamp the full weight of COVID-19 was starting to bear down on society. Everyone was afraid for the wellbeing of themselves and their family, people in the class were unsure whether they’d find employment or face financial ruin. My team of four would then embark on a project that could well have broken us, where everything that could go wrong, did. The truest embodiment of Murphys law.', 'Among us two parents burdened to try find schedule balance with now homebound children. Ironically we’d be creating a self-care app, that looks to automatically schedule guilt free self-care tasks into your already jam packed google calendar.', 'Along the way we’d have to rebuild the React Native Front End four times due to Google OAuth dead-ends. We’d have to rebuild the Back End twice for similar conflicts with user sessions and Graph QL. All the while the team kept in spirit, kept in open communication, and cheerfully and supportively powered through setback after setback to reach a solid MVP.', 'While we might not have landed where we wanted, I can honestly say I’m more proud of that journey and that team more than I am of any other project.'],
             stack: ['React Native', 'Apollo/GraphQL', 'React Test Renderer', 'Travis CI', 'Expo', 'Google OAuth'],
-            img: '../assets/treat_yoself.png'
+            img: 'https://d2fbv9aul2xr54.cloudfront.net/treat_yoself.png'
         },
         {
             title: 'Sequence : A Fidget Game',
@@ -80,7 +87,7 @@ export const projects = [
             live: 'https://joel-oe-lacey.github.io/fidget/',
             desc: ['My mind is often drifts with hyperactivity. I find I stay more engaged if I perform simple mechanical tasks in the background of whatever I\'m doing.I built a very simple arrow key fidget game to funnel that passive energy.', 'This was a basic hackathon project, built in four hours. It served as good practice on defining a baseline MVP and then shooting for that, with outlined extensions available. I had hoped to get a points shop open, to get more dynamic animations in place, but ultimately had to reign those in to create something concrete and usable.', 'The struggle came from the implementation of a custom hook to track user key stroke input, something I had set as a learning goal for the project. It took a variety of implementations to prevent an infinite loop of state refreshes. Creating dynamic styling for the arrow display was also a fun experiment.', 'Ultimately, this project placed third in the competition. Even in its simplicity, it’s a functional tool I still regularly turn to to manage hyperactivity in my day to day.'],
             stack: ['React (Hooks)', 'Redux', 'SCSS'],
-            img: '../assets/fidget.png'
+            img: 'https://d2fbv9aul2xr54.cloudfront.net/fidget.png'
         },
         {
             title: 'Grandiose Sarajevo Motel',
@@ -88,7 +95,7 @@ export const projects = [
             live: '',
             desc: ['After working in JavaScript frameworks for long enough you can start to forget how much heavy lifting they’re doing, and all the aches and pains of earlier developers. Starting at Turing, we were tested to start in that tribulation before we got to the good stuff. Three months in, this solo project was an exploration of that more fundamental form of development, built entirely using vanilla JavaScript and jQuery.', 'This project was built with a focus on Test Driven Design, utilizing Mocha and Chai for testing. While I’ve found TDD to be much more accessible in vanilla JavaScript than it is with a more complex framework, stateful tracking and effective single page display was quickly becoming unwieldy for the scope of the operation at hand.', 'jQuery helped eliminate a slew of event listeners, but effective utilization of event bubbling was still key. Given there were two separate possible user profile types (a customer and a manager) and each had different displays, effectively designing modular and reusable components while allowing enough variation and flexibility in those components proved difficult with a purely object oriented structure.', 'Still, ultimately the project was a fun opportunity to work more closely with class design, experiment on some different modes of styling, and work in a clean TDD workflow which made the struggle all worthwhile.'],
             stack: ['Javascript', 'jQuery', 'SCSS', 'Mocha', 'Chai'],
-            img: '../assets/sarajevo_motel.png'
+            img: 'https://d2fbv9aul2xr54.cloudfront.net/sarajevo_motel.png'
         },
 
     ]
