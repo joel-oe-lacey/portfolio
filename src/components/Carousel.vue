@@ -3,8 +3,10 @@
     <section class="carousel">
       <slot/>
     </section>
-    <button @click="changeSlide(-1)">Prev Slide</button>
-    <button @click="changeSlide(1)">Next Slide</button>
+    <section class="btn-cont-carousel">
+      <button @click="changeSlide(-1)" class="btn">Back</button>
+      <button @click="changeSlide(1)" class="btn">Forward</button>
+    </section>
   </section>
 </template>
 
@@ -28,12 +30,19 @@ export default {
   overflow: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
-
 .carousel > * {
   flex: 1 0 100%;
   scroll-snap-align: start;
+}
+.btn-cont-carousel {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 </style>
