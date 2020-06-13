@@ -1,17 +1,21 @@
 
 <template>
   <section class="resumeItem">
-      <section class="leftHeader">
-          <h2>{{company}}</h2>
+      <h2 class='comp'>{{company}}</h2>
+      <h2 class='date'>{{`${edate} - ${sdate}`}}</h2>
+      <section class="details">
           <h2>{{title}}</h2>
-      </section>
-      <section class="rightHeader">
           <h2>{{location}}</h2>
-          <h2>{{`${sdate} - ${edate}`}}</h2>
       </section>
-      <ul class="body">
+      <section class='desc'>
+        <p v-for="(paragraph, index) in desc" :key="index">
+          {{paragraph}}
+        </p>
+      </section>
+      <h2 class='listheader'>Highlights</h2>
+      <ul class="highlights">
           <li
-          v-for="point in points" :key="point">{{point}}
+          v-for="(point, index) in highlights" :key="index">{{point}}
           </li>
       </ul>
   </section>
@@ -22,31 +26,56 @@ export default {
   name: 'InfoBlock',
   components: {
   },
-  props: ['company', 'sdate', 'edate', 'location', 'title', 'points']
+  props: ['company', 'sdate', 'edate', 'location', 'title', 'desc', 'highlights']
 }
 </script>
 
 <style>
-.leftHeader {
-  height: 40%;
-  width: 70%;
-}
-.rightHeader {
-  height: 40%;
-  width: 30%;
-}
-.body {
-  height: 60%;
+.comp {
+  height: 10%;
   width: 100%;
-  margin-top: 2%;  
+  text-align: center;
+  color: #C4D3E7;
+}
+.details {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #CEA1B3;
+}
+.desc {
+  height: 35%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.listheader {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #CEA1B3;
+}
+.highlights {
+  height: 25%;
+  width: 85%; 
+}
+.date {
+  height: 10%;
+  width: 100%;
+  text-align: center;
 }
 .resumeItem {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3%;
-    height: 40%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 </style>
