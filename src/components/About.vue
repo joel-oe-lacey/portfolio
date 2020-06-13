@@ -2,13 +2,13 @@
     <div class="about-cont">
       <div class="parallax-container">
         <parallax>
-          <img src="../assets/nyc.jpg" class="background">
+          <img src="https://d2fbv9aul2xr54.cloudfront.net/nyc.jpg" class="background">
         </parallax>
       </div>
       <Landing v-bind="aboutLanding"/>
       <div id="inner-wrapper">
-        <InfoBlock />
-      <h2 class='port-header'>My Journey</h2>
+        <InfoBlock v-bind="personalDesc"/>
+        <h2 class='port-header'>My Journey</h2>
         <Carousel width="100%" height="50%">
           <ExperienceBlock 
             v-for="item in journey"
@@ -24,7 +24,7 @@ import Landing from './Landing.vue';
 import InfoBlock from './InfoBlock.vue';
 import ExperienceBlock from './ExperienceBlock.vue';
 import Carousel from './Carousel.vue';
-import { about, journey, aboutLanding } from '../assets/content.js';
+import { about, journey, aboutLanding, personalDesc } from '../assets/content.js';
 import Parallax from "vue-parallaxy";
 
 export default {
@@ -40,7 +40,8 @@ export default {
         return {
           about,
           journey,
-          aboutLanding
+          aboutLanding,
+          personalDesc
         }
     }
 }
@@ -57,7 +58,6 @@ export default {
   text-align: left;
   z-index: 1;
   align-self: center;
-  /* background-color: rgba(149, 144, 168, 0.6); */
 }
 .header {
   height: 10%;
@@ -65,7 +65,6 @@ export default {
   text-align: left;
   padding: 1%;
   color: #C4D3E7;
-  /* background: linear-gradient(45deg,#82455D, #555B6E); */
 }
 .background {
   height: 100%;
@@ -75,7 +74,6 @@ export default {
 .parallax-container {
   position: relative;
   z-index: 1;
-  /* height: 75%; */
   width: 100%;
 }
 .about-cont {
@@ -84,7 +82,6 @@ export default {
   z-index: 0;
   display: flex;
   flex-flow: column;
-  /* justify-content: center; */
   align-items: center;
   overflow: hidden;
 }

@@ -2,18 +2,21 @@
     <div class="port-wrapper">
       <div class="parallax-container">
         <parallax>
-          <img src="../assets/street.jpg" class="background">
+          <img src="https://d2fbv9aul2xr54.cloudfront.net/street.jpg" class="background">
         </parallax>
       </div>
       <Landing v-bind="portLanding" />
       <h2 class='port-header'>Projects</h2>
-      <Carousel width="90%" height="45%">
+      <Carousel width="90%" height="40%">
         <PortfolioBlock 
         v-for="(item, index) in projects"
         v-bind:key="index"
         v-bind="item"/>
       </Carousel>
       <h2 class='port-header'>About this site</h2>
+      <article class="about-site">
+        <p>This website was made in Vue. </p>
+      </article>
     </div>
 </template>
 
@@ -59,5 +62,8 @@ export default {
   width: 90%;
   color: #C4D3E7;
   font-size: 2rem;
+}
+.about-site {
+  width: 90%;
 }
 </style>
