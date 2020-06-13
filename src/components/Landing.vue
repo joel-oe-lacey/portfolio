@@ -20,37 +20,40 @@ export default {
 
 <style>
 .landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width: 100%;
-    z-index: 2;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
 }
 .inner-landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    height: 40%;
-    width: 60%;
-    background-color: rgba(149, 144, 168, 0.6);
-    border-bottom-right-radius: 5% 10%;
-    border-top-right-radius: 5% 10%;
-    border-bottom-left-radius: 5% 10%;
-    border-top-left-radius: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5%;
+  height: 40%;
+  width: 60%;
+  background-color: rgba(149, 144, 168, 0.6);
+  border-bottom-right-radius: 5% 10%;
+  border-top-right-radius: 5% 10%;
+  border-bottom-left-radius: 5% 10%;
+  border-top-left-radius: 5% 10%;
 }
 .landing-text {
   font-size: 1.4rem;
 }
 .working-skills {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: space-between;
   font-weight: bold;
   font-size: 1.3rem;
+  margin: 1%;
+  height: 50%;
+  width: 80%;
 }
 </style>

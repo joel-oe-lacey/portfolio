@@ -23,7 +23,8 @@ export default {
     position: fixed;
     margin-top: auto;
     height: 100px;
-    width: 60%;
+    width: 40%;
+    min-width: 30%;
     font-size: 2em;
     z-index: 9999;
     align-self: flex-end;

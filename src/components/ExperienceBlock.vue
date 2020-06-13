@@ -47,7 +47,7 @@ export default {
   color: #CEA1B3;
 }
 .desc {
-  height: 30%;
+  height: 35%;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@ export default {
   color: #CEA1B3;
 }
 .highlights {
-  height: 30%;
+  height: 25%;
   width: 85%; 
 }
 .date {
