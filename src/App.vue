@@ -25,7 +25,7 @@ export default {
   flex-flow: column;
   /* align-items: center; */
   /* text-align: left; */
-  height: 250vh;
+  height: 275vh;
   width: 100%;
   background-color: #555B6E;
   color: #E8EBE4;

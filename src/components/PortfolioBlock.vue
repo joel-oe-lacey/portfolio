@@ -142,8 +142,8 @@ export default {
   border-bottom-left-radius: 5% 10%;
   border-top-left-radius: 5% 10%;
 }
-.btn:hover {
+/* .btn:hover {
   box-shadow: 0.1rem 0.2rem 0.3rem white;
   transition: 300ms;
-}
+} */
 </style>

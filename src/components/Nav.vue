@@ -30,13 +30,13 @@ export default {
     align-self: flex-end;
 }
 .link {
-    text-decoration: none;
-    color: #E8EBE4;
-    padding: 1%;
-    border-bottom-right-radius: 15% 30%;
-    border-top-right-radius: 15% 30%;
-    border-bottom-left-radius: 15% 30%;
-    border-top-left-radius: 15% 30%;
+  text-decoration: none;
+  color: #E8EBE4;
+  padding: 1%;
+  border-bottom-right-radius: 15% 30%;
+  border-top-right-radius: 15% 30%;
+  border-bottom-left-radius: 15% 30%;
+  border-top-left-radius: 15% 30%;
 }
 .link:hover {
   background-color: #82455D;

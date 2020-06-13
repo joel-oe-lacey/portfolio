@@ -14,9 +14,13 @@
         v-bind="item"/>
       </Carousel>
       <h2 class='port-header'>About this site</h2>
-      <article class="about-site">
-        <p>This website was made in Vue. </p>
-      </article>
+      <footer class="about-site">
+        <p>This website was created as an exploration into Vue. It is hosted statically on AWS, images are served via cloudfront.</p>
+        <!-- <p></p> -->
+        <p>About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash.</p>
+        <!-- <p></p> -->
+        <p>Icons made by Freepik from www.flaticon.com.</p>
+      </footer>
     </div>
 </template>
 
@@ -65,5 +69,9 @@ export default {
 }
 .about-site {
   width: 90%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 </style>

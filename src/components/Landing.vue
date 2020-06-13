@@ -44,16 +44,18 @@ export default {
   border-top-left-radius: 5% 10%;
 }
 .landing-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .working-skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 1.3rem;
-  margin: 1%;
+  font-size: 1.2rem;
   height: 50%;
   width: 80%;
+}
+.working-skills > p {
+  margin: 2%;
 }
 </style>
