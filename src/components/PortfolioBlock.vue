@@ -14,13 +14,13 @@
         </p>
       </section>
       <section class="project-img-cont">
-        <img class="project-img" src="../assets/american_portrait.png" />  
+        <img class="project-img" :src="img" />  
+      </section>
+      <section v-if="live" class="btn-cont-live">
+        <a :href="live" class="btn">Live Site</a>
       </section>
       <section class="btn-cont-github">
         <a :href="github" class="btn">Github</a>
-      </section>
-      <section class="btn-cont-live">
-        <a :href="live" class="btn">Live Site</a>
       </section>
     </section>
   </section>
@@ -45,7 +45,7 @@ export default {
   "header header"
   "about img"
   "stack stack"
-  "github live";
+  "live github";
   height: 96%;
   width: 98%;
   padding: 3%;
@@ -60,9 +60,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90%;
-  width: 90%;
-  margin: 3%;
+  height: 100%;
+  width: 100%;
   /* border-radius: 1%; */
   background-color: #C4D3E7;
   border-bottom-right-radius: 5% 10%;
@@ -92,9 +91,10 @@ export default {
   color: #82455D;
 }
 .project-img {
-  height: 50%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   object-fit: scale-down;
+  background: #C4D3E7;
 }
 .project-img-cont {
   height: 100%;
