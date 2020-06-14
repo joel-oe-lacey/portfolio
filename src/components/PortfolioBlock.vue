@@ -136,14 +136,15 @@ export default {
   color: #82455D;
   font-size: 1.8rem;
   font-weight: bold;
-  border: 2px solid #82455D;
-  border-bottom-right-radius: 5% 10%;
-  border-top-right-radius: 5% 10%;
-  border-bottom-left-radius: 5% 10%;
-  border-top-left-radius: 5% 10%;
+  /* border: 2px solid #82455D; */
+  border-bottom-right-radius: 5% 30%;
+  border-top-right-radius: 5% 30%;
+  border-bottom-left-radius: 5% 30%;
+  border-top-left-radius: 5% 30%;
 }
-/* .btn:hover {
-  box-shadow: 0.1rem 0.2rem 0.3rem white;
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.3rem 0.6rem #CEA1B3;
   transition: 300ms;
-} */
+}
 </style>

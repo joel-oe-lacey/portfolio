@@ -6,8 +6,8 @@
         </parallax>
       </div>
       <Landing v-bind="portLanding" />
-      <h2 class='port-header'>Projects</h2>
-      <Carousel width="90%" height="40%">
+      <!-- <h2 class='port-header'>Projects</h2> -->
+      <Carousel width="90%" height="40%" :style="{ 'margin-top': '5%' }">
         <PortfolioBlock 
         v-for="(item, index) in projects"
         v-bind:key="index"
@@ -15,12 +15,13 @@
       </Carousel>
       <h2 class='port-header'>About this site</h2>
       <footer class="about-site">
-        <p>This website was created as an exploration into Vue. It is hosted statically on AWS, images are served via cloudfront.</p>
+        <p>This website was created as an exploration into Vue. It is hosted statically on AWS, images are served via cloudfront. About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash. Icons made by Freepik from www.flaticon.com.</p>
         <!-- <p></p> -->
-        <p>About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash.</p>
+        <!-- <p>About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash.</p> -->
         <!-- <p></p> -->
-        <p>Icons made by Freepik from www.flaticon.com.</p>
+        <!-- <p>Icons made by Freepik from www.flaticon.com.</p> -->
       </footer>
+      <a href="https://joel-oe-lacey-resources.s3.amazonaws.com/resume-joellacey.pdf" id='resume' class='btn'>View My Resume</a>
     </div>
 </template>
 
@@ -65,7 +66,7 @@ export default {
   height: 5%;
   width: 90%;
   color: #C4D3E7;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .about-site {
   width: 90%;
@@ -73,5 +74,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+#resume {
+  height: 2%;
+  width: 60%
 }
 </style>

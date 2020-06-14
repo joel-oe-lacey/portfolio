@@ -4,8 +4,8 @@
       <slot/>
     </section>
     <section class="btn-cont-carousel">
-      <button @click="changeSlide(-1)" class="btn">Back</button>
-      <button @click="changeSlide(1)" class="btn">Forward</button>
+      <button @click="changeSlide(-1)" id="btn-carousel" class="btn">Back</button>
+      <button @click="changeSlide(1)" id="btn-carousel" class="btn">Forward</button>
     </section>
   </section>
 </template>
@@ -44,5 +44,9 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+#btn-carousel {
+  width: 30%;
+  border: none;
 }
 </style>
