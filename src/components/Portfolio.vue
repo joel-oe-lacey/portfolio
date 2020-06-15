@@ -70,13 +70,14 @@ export default {
 }
 .about-site {
   width: 90%;
-  height: 10%;
+  height: 3%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 #resume {
   height: 2%;
-  width: 60%
+  width: 40%;
+  margin-top: 4%;
 }
 </style>
