@@ -10,16 +10,16 @@
           v-for="(item, index) in body" :key="index">{{item}}
           </p>
           <section class="contacts">      
-            <a href="https://www.linkedin.com/in/joellacey/"> 
+            <a href="https://www.linkedin.com/in/joellacey/" class="link"> 
               <img class="icon" src="../assets/linkedin.svg">
             </a>
-            <a href="https://github.com/joel-oe-lacey"> 
+            <a href="https://github.com/joel-oe-lacey" class="link"> 
               <img class="icon" src="../assets/github.svg">
             </a>
-            <a href="https://twitter.com/LaceyJoel"> 
+            <a href="https://twitter.com/LaceyJoel" class="link"> 
               <img class="icon" src="../assets/twitter.svg">
             </a>
-            <a href="mailto:joellaceybusiness@gmail.com"> 
+            <a href="mailto:joellaceybusiness@gmail.com" class="link"> 
               <img class="icon" src="../assets/email.svg">
             </a>
           </section>
@@ -79,9 +79,34 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-.icon {
+.link {
   height: 80%;
   width: 20%;
+}
+.icon {
+  height: 100%;
+  width: 100%;
   object-fit: contain;
+}
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    height: 60%;
+  }
+  .portrait-cont,
+  .info {
+    width: 90%;
+  }
+  .info > * {
+    margin: 2%;
+  }
+  .name-header {
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .contacts {
+    width: 100%;
+    align-self: center;
+  }
 }
 </style>
