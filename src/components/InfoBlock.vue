@@ -91,7 +91,6 @@ export default {
 @media (max-width: 800px) {
   .about {
     flex-direction: column;
-    height: 60%;
   }
   .portrait-cont,
   .info {

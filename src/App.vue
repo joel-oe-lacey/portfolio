@@ -23,12 +23,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-flow: column;
-  /* align-items: center; */
-  /* text-align: left; */
   height: 275vh;
   width: 100%;
   background-color: #555B6E;
   color: #E8EBE4;
   z-index: -1;
+}
+@media (max-width: 800px) {
+  .app {
+    height: 340vh;
+  }
 }
 </style>

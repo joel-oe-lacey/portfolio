@@ -43,4 +43,12 @@ export default {
   color: #C4D3E7;
   transition: .5s;
 }
+@media (max-width: 800px) {
+  #nav {
+    width: 100%;
+  }
+  .link:hover {
+    background: transparent;
+  }
+}
 </style>
