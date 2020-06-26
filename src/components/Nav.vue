@@ -16,18 +16,18 @@ export default {
 
 <style>
 #nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    margin-top: auto;
-    height: 100px;
-    width: 40%;
-    min-width: 30%;
-    font-size: 2em;
-    z-index: 9999;
-    align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  margin-top: auto;
+  height: 100px;
+  width: 40%;
+  min-width: 30%;
+  font-size: 2rem;
+  z-index: 9999;
+  align-self: flex-end;
 }
 .link {
   text-decoration: none;
@@ -37,18 +37,23 @@ export default {
   border-top-right-radius: 15% 30%;
   border-bottom-left-radius: 15% 30%;
   border-top-left-radius: 15% 30%;
+  height: 80%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .link:hover {
-  background-color: #82455D;
   color: #C4D3E7;
   transition: .5s;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   #nav {
     width: 100%;
   }
-  .link:hover {
-    background: transparent;
+  .link {
+    width: 50%;
   }
 }
 </style>
