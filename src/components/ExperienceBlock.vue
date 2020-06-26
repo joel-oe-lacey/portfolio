@@ -33,7 +33,7 @@ export default {
 <style>
 .comp {
   height: 10%;
-  width: 100%;
+  width: 90%;
   text-align: center;
   color: #C4D3E7;
 }
@@ -59,6 +59,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   color: #CEA1B3;
 }
 .highlights {
@@ -67,7 +68,7 @@ export default {
 }
 .date {
   height: 10%;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
 .resumeItem {
@@ -77,5 +78,22 @@ export default {
   align-items: center;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 850px) {
+  .comp {
+    /* still getting height overflow on mobile */
+    height: 10%
+  }
+  .date {
+    height: 5%;
+  }
+  .details {
+    flex-direction: column;
+    text-align: center;
+    font-size: .8rem;
+  }
+  .desc {
+    height: 40%;
+  }
 }
 </style>

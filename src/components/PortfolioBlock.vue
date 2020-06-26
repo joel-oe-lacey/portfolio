@@ -3,7 +3,10 @@
   <section class="portfolio-item">
     <section class="portfolio-body">
       <h1 class="proj-header">{{title}}</h1>
-      <section class='port-desc'>
+      <section class="project-img-cont">
+        <img class="project-img" :src="img" />  
+      </section>
+      <section class='portfolio-desc'>
         <p v-for="(paragraph, index) in desc" :key="index">
           {{paragraph}}
         </p>
@@ -12,9 +15,6 @@
         <p
         v-for="item in stack" :key="item">{{item}}
         </p>
-      </section>
-      <section class="project-img-cont">
-        <img class="project-img" :src="img" />  
       </section>
       <section v-if="live" class="btn-cont-live">
         <a :href="live" class="btn">Live Site</a>
@@ -62,7 +62,6 @@ export default {
   justify-content: center;
   height: 100%;
   width: 100%;
-  /* border-radius: 1%; */
   background-color: #C4D3E7;
   border-bottom-right-radius: 5% 10%;
   border-top-right-radius: 5% 10%;
@@ -75,7 +74,7 @@ export default {
   grid-area: header;
   color: #82455D;
 }
-.port-desc {
+.portfolio-desc {
   grid-area: about;
   display: flex;
   flex-direction: column;
@@ -84,7 +83,7 @@ export default {
 .stack {
   grid-area: stack;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   font-weight: bold;
   font-size: 1.3rem;
@@ -136,7 +135,6 @@ export default {
   color: #82455D;
   font-size: 1.8rem;
   font-weight: bold;
-  /* border: 2px solid #82455D; */
   border-bottom-right-radius: 5% 30%;
   border-top-right-radius: 5% 30%;
   border-bottom-left-radius: 5% 30%;
@@ -146,5 +144,51 @@ export default {
   cursor: pointer;
   box-shadow: 0.1rem 0.3rem 0.6rem #CEA1B3;
   transition: 300ms;
+}
+@media (max-width: 850px) {
+  .portfolio-body {
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border-bottom-right-radius: 11% 6%;
+    border-top-right-radius: 11% 6%;
+    border-bottom-left-radius: 11% 6%;
+    border-top-left-radius: 11% 6%;
+  }
+  .portfolio-body > * {
+    margin: 2%;
+  }
+  .portfolio-desc > * {
+    padding: 2%;
+  }
+  .portfolio-item {
+    padding: 1%;
+    border-bottom-right-radius: 11% 6%;
+    border-top-right-radius: 11% 6%;
+    border-bottom-left-radius: 11% 6%;
+    border-top-left-radius: 11% 6%;
+  }
+  .proj-header {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .project-img-cont {
+    border-bottom-right-radius: 11% 6%;
+    border-top-right-radius: 11% 6%;
+    border-bottom-left-radius: 11% 6%;
+    border-top-left-radius: 11% 6%;
+  }
+  .btn {
+    height: 60%;
+    width: 80%;
+  }
+  .btn-cont-github,
+  .btn-cont-live {
+    height: 15%;   
+  }
+  .project-img-cont {
+    height: 30%;
+  }
 }
 </style>

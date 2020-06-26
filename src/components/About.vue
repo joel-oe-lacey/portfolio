@@ -85,4 +85,9 @@ export default {
   align-items: center;
   overflow: hidden;
 }
+@media (max-width: 850px) {
+  #inner-wrapper {
+    width: 100%;
+  }
+}
 </style>

@@ -34,7 +34,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 5%;
+  padding: 5%;
   height: 40%;
   width: 60%;
   background-color: rgba(149, 144, 168, 0.6);
@@ -57,5 +57,14 @@ export default {
 }
 .working-skills > p {
   margin: 2%;
+}
+@media (max-width: 850px) {
+  .inner-landing {
+    height: 45%;
+    width: 80%;
+  }
+  .landing-text {
+    font-size: 1.4rem;
+  }
 }
 </style>

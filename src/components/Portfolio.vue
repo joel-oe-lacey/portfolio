@@ -13,15 +13,12 @@
         v-bind:key="index"
         v-bind="item"/>
       </Carousel>
-      <h2 class='port-header'>About this site</h2>
       <footer class="about-site">
+        <h2 class='port-header'>About this site</h2>
         <p>This website was created as an exploration into Vue. It is hosted statically on AWS, images are served via cloudfront. About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash. Icons made by Freepik from www.flaticon.com.</p>
-        <!-- <p></p> -->
-        <!-- <p>About Page background by Colton Duke on Unsplash. Portfolio Page background by Yassine Khalfalli on Unsplash.</p> -->
-        <!-- <p></p> -->
-        <!-- <p>Icons made by Freepik from www.flaticon.com.</p> -->
+        <p>Coming improvements include a cleaner mobile display, closer alignment to the Vue style guide, improved transitions and interactivity, and a section for personal contacts and blog posts.</p>
+        <a href="https://joel-oe-lacey-resources.s3.amazonaws.com/resume-joellacey.pdf" id='resume' class='btn'>View My Resume</a>
       </footer>
-      <a href="https://joel-oe-lacey-resources.s3.amazonaws.com/resume-joellacey.pdf" id='resume' class='btn'>View My Resume</a>
     </div>
 </template>
 
@@ -70,14 +67,19 @@ export default {
 }
 .about-site {
   width: 90%;
-  height: 3%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 #resume {
-  height: 2%;
-  width: 40%;
-  margin-top: 4%;
+  height: 20%;
+  width: 75%;
+  align-self: center;
 }
+/* @media (max-width: 850px) {
+  #nav {
+
+  }
+} */
 </style>

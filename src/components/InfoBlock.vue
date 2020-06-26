@@ -10,16 +10,16 @@
           v-for="(item, index) in body" :key="index">{{item}}
           </p>
           <section class="contacts">      
-            <a href="https://www.linkedin.com/in/joellacey/"> 
+            <a href="https://www.linkedin.com/in/joellacey/" class="contact-link"> 
               <img class="icon" src="../assets/linkedin.svg">
             </a>
-            <a href="https://github.com/joel-oe-lacey"> 
+            <a href="https://github.com/joel-oe-lacey" class="contact-link"> 
               <img class="icon" src="../assets/github.svg">
             </a>
-            <a href="https://twitter.com/LaceyJoel"> 
+            <a href="https://twitter.com/LaceyJoel" class="contact-link"> 
               <img class="icon" src="../assets/twitter.svg">
             </a>
-            <a href="mailto:joellaceybusiness@gmail.com"> 
+            <a href="mailto:joellaceybusiness@gmail.com" class="contact-link"> 
               <img class="icon" src="../assets/email.svg">
             </a>
           </section>
@@ -72,16 +72,41 @@ export default {
   color: #CEA1B3;
 }
 .contacts {
-  height: 10%;
+  height: 15%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.icon {
+.contact-link {
   height: 80%;
   width: 20%;
+}
+.icon {
+  height: 100%;
+  width: 100%;
   object-fit: contain;
+}
+@media (max-width: 850px) {
+  .about {
+    height: 60%;
+    flex-direction: column;
+  }
+  .portrait-cont,
+  .info {
+    width: 90%;
+  }
+  .info > * {
+    margin: 2%;
+  }
+  .name-header {
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .contacts {
+    width: 100%;
+    align-self: center;
+  }
 }
 </style>
