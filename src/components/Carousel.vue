@@ -46,7 +46,13 @@ export default {
   align-items: center;
 }
 #btn-carousel {
-  width: 30%;
+  height: 50%;
+  width: 40%;
   border: none;
+}
+@media (max-width: 850px) {
+  .carousel-outer[style] {
+    height: 60% !important;
+  }
 }
 </style>
