@@ -29,7 +29,7 @@ export default {
   color: #E8EBE4;
   z-index: -1;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .app {
     height: 340vh;
   }
